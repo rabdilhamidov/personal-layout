@@ -1,0 +1,45 @@
+/**
+ * Pager
+ * ----------------------------------------------------------------------------
+ */
+.chapter-footer{
+ 	.pager{
+ 		text-align: center;
+ 		a, span{
+ 			vertical-align: middle;
+ 			display: inline-block;
+ 			width: 40px;
+ 			height: 40px;
+ 			text-align: center;
+ 			line-height: 37px;
+ 			font-size: 24px;
+ 			font-family: 'rl';
+ 			&:hover, &.current{
+ 				background-color: $orange;
+ 				color: $white;
+ 			}
+ 			&.pre, &.next{
+ 				width: 25px;
+ 				height: 20px;
+ 				background: url("../images/arrow-double.svg") center no-repeat;
+ 				border: 0 none;
+ 				&:hover{
+ 					outline: 0 none;
+ 				}
+ 			}
+ 			&.pre{
+ 				transform: rotate(180deg);
+ 				margin-right: 20px;
+ 			}
+ 			&.next{
+ 				margin-left: 20px;
+ 			}
+ 		}
+		span{
+			&.pre, &.next{
+				background: url("../images/arrow-double-disable.svg") center no-repeat;
+			}
+
+		}
+ 	}
+}

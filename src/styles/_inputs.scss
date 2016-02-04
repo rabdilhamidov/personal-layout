@@ -1,0 +1,52 @@
+/**
+ * Form inputs
+ * ----------------------------------------------------------------------------
+ */
+
+button,
+input,
+select,
+textarea {
+	font-size: 18px;
+	border: 0 none;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"]{
+	height: 40px;
+}
+
+a.button,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]{
+	transition-property: color, background-color, opacity;
+	transition-duration: 0.3s;
+	height: 40px;
+	box-sizing: border-box;
+	font-size: 26px;
+	line-height: 26px;
+	font-family: "rr";
+	padding: 0;
+	cursor: pointer;
+	padding: 0 20px 3px;
+	background-color: $grey2;
+	color: $black;
+	&:hover{
+		background-color: $white;
+	}
+	&.green{
+		background-color: $green1;
+		color: $green3;
+		&:hover{
+			background-color: $green2;
+		}
+	}
+}
+a.button{
+	display: inline-block;
+	padding-top: 6px;
+}

@@ -1,0 +1,52 @@
+/**
+ * Footer
+ * ----------------------------------------------------------------------------
+ */
+footer{
+	color: $grey;
+	padding-top: 30px;
+	background: $black;
+	.leftblock, .rightblock{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.leftblock{
+		width: 645px;
+		margin-right: 50px;
+		padding-left: 20px;
+		h3{
+			font-size: 30px;
+			line-height: 32px;
+			font-family: "rt";
+			color: $white;
+			text-transform: none;
+			display: inline-block;
+			&:before{
+				content: '';
+				width: 65px;
+				height: 53px;
+				background: url('../images/ra-logo-orange.svg') center;
+				background-size: 140% 100%;
+				display: inline-block;
+				vertical-align: -17px;
+				margin-right: 18px;
+			}
+		}
+		span{
+			vertical-align: 2px;
+		}
+
+	}
+	.rightblock{
+		width: 320px;
+		margin-top: -14px;
+		input, textarea, button{
+			width: 100%;
+			margin-top: 20px;
+		}
+		textarea{
+			height: 120px;
+			resize: none;
+		}
+	}
+}

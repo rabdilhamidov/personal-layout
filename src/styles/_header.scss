@@ -1,0 +1,113 @@
+/**
+ * Header
+ * ----------------------------------------------------------------------------
+ */
+
+header{
+	background-color: $green2;
+	border-bottom: 4px solid $green3;
+	position: relative;
+	hgroup{
+		display: inline-block;
+		vertical-align: top;
+		a.logo{
+			display: inline-block;
+			width: 134px;
+			height: 116px;
+			background: url("../images/ra-logo.svg") center no-repeat $orange;
+			margin-right: -5px !important;
+		}
+		h1{
+			display: inline-block;
+			background-color: $green1;
+			width: 246px;
+			height: 116px;
+			vertical-align: top;
+			color: $white;
+			font-size: 32px;
+			line-height: 35px;
+			padding-left: 5px;
+			padding-top: 20px;
+		}
+	}
+
+	.avatar{
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		// background: url("../images/my-avatar.jpg") center bottom no-repeat transparent;
+		// background-size: 100%;
+		background-color: #eee;
+		border-radius: 10px;
+		position: absolute;
+		right: 0;
+		top: 20px;
+		overflow: hidden;
+		a{
+			display: block;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.login-form{
+	width: 440px;
+	height: auto;
+	background-color: $green2;
+	padding: 20px;
+	label{
+		width: 25%;
+		display: inline-block;
+		margin-top: 20px;
+		&[for="remember_me"]{
+			width: 130px;
+		}
+		& + input{
+			width: 71%;
+			margin-left: 10px;
+		}
+	}
+	input{
+		&[type="submit"]{
+			text-align: center;
+			margin-top: 20px;
+		}
+		&[type="checkbox"]{
+
+		}
+	}
+	fieldset.form-footer{
+		border: 0 none;
+		padding: 0;
+		display: block;
+		text-align: right;
+	}
+	.form-error-mess{
+		margin: 10px 0 20px;
+		color: $white;
+	}
+	.buttons{
+		margin-top: -60px;
+		a.button{
+			margin-top: 10px;
+		}
+	}
+}
+.header{
+	.login-form{
+		display: none;
+		position: absolute;
+		z-index: 2;
+		right: 0;
+		margin-top: 32px;
+	}
+}
+.content{
+	& > .login-form{
+		display: relative;
+		margin: 40px auto;
+	}
+}

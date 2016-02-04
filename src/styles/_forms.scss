@@ -1,0 +1,66 @@
+/**
+ * Forms
+ * ----------------------------------------------------------------------------
+ */
+
+.form-report-block{
+	display: none;
+	width: 320px;
+	position: absolute;
+	background-color: $orange;
+	bottom: 0;
+	padding: 20px;
+	text-align: center;
+	// left: 50%;
+	margin-left: -340px;
+	color: $white;
+	a.close1{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.sign{
+		width: 70px;
+		height: 70px;
+		display: inline-block;
+	}
+	&.error{
+		.sign{
+			background: url("../images/attention.svg") center no-repeat;
+		}
+	}
+	&.success{
+		background-color: $green2;
+		.sign{
+			background: url("../images/ok.svg") center no-repeat;
+		}
+	}
+	.form-message{
+		width:100%;
+		display: inline-block;
+		h4{
+			font-family: 'rb';
+			font-weight: normal;
+		}
+		ul{
+			margin-top: 0;
+			li{
+				margin-top: 0;
+			}
+		}
+	}
+}
+.comment-form-report-block{
+	&.error{
+		.sign{
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			background: url("../images/attention.svg") center no-repeat;
+		}
+		.form-message{
+			color: $orange;
+			margin-bottom: 10px;
+		}
+	}
+} 

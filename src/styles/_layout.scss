@@ -1,0 +1,55 @@
+/**
+ * Basic Structure
+ * ----------------------------------------------------------------------------
+ */
+
+html, body {
+    height: 100%;
+}
+.wrapper, .footer{
+	min-width: 1020px;
+	max-width: 1900px;
+}
+.wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background-color: $white;
+}
+
+/* Header
+-----------*/
+.header {
+	height: 120px;
+}
+
+/* Middle
+----------*/
+.site {
+	padding: 0 0 320px;
+}
+.content{
+	width: 1020px;
+	margin: 0 auto;
+	position: relative;
+}
+aside{
+	width: 21%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3.5%;
+	padding-left: 20px;
+}
+.articles{
+	width: 75%;
+	display: inline-block;
+}
+
+/* Footer
+----------*/
+.footer {
+	margin: -320px auto 0;
+	height: 320px;
+	position: relative;
+}

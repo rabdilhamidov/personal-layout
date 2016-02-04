@@ -1,0 +1,253 @@
+/**
+ * Content
+ * ----------------------------------------------------------------------------
+ */
+h2{
+ 	font-size: 62px;
+ 	line-height: 65px;
+ 	font-family: 'rt';
+ 	text-transform: uppercase;
+ 	color: $green1;
+ 	margin-bottom: 20px;
+}
+
+.home{
+	h2, h3{
+		font-size: 62px;
+		line-height: 65px;
+		font-family: 'rt';
+		text-transform: uppercase;
+		color: $black;
+	}
+	h3{
+		color: $green1;
+	}
+}
+
+section{
+	&.chapter{
+		margin-top: 40px;
+		position: relative;
+		&:last-child{
+			margin-bottom: 80px;
+		}
+		h3{
+			margin-bottom: 20px;
+		}
+		ul.figures{
+			li{
+				display: inline-block;
+				margin-right: 25px;
+				margin-bottom: 25px;
+				&:last-child, &:nth-child(3n){
+					margin-right: 0;
+				}
+			}
+		}
+		figure{
+			width: 320px;
+			height: 320px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+			// cursor: pointer;
+			img{
+				height: 100%;
+				&.fullscr{
+					display: none;
+				}
+			}
+			figcaption{
+				display: none;
+				width: 100%;
+				height: 70px;
+				background-color: rgba(140, 180, 75, 0.8);
+				padding: 10px;
+				border-bottom: 4px solid $green4;
+				position: absolute;
+				bottom: 0;
+				// pointer-events:  none;
+				&:before{
+					content: '';
+					width: 20px;
+					height: 20px;
+					background: url('../images/triange1.svg') center no-repeat;
+					display: block;
+					position: absolute;
+					top: -16px;
+					left: 10px;
+					opacity: .8;
+				}
+				h4, p{
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					color: $white;
+				}
+				h4{
+					font-size: 20px;
+					line-height: 22px;
+					text-transform: uppercase;
+				}
+				p{
+					margin-top: 5px;
+				}
+				a{
+					color: $white;
+					text-decoration: underline;
+				}
+			}
+		}
+		.controls a{
+			opacity: 0.3;
+			width: 40px;
+			height: 80px;
+			&:hover{
+				opacity: 1;
+			}
+		}
+		.chapter-footer{
+			text-align: right;
+			margin-top: 20px;
+		}
+		&.dark{
+			background-color: $black;
+			padding: 40px 0;
+			h3{
+				color: $white;
+			}
+		}
+		&.blog{
+			background-color: $green5;
+			padding: 40px 0 80px;
+			h3{
+				color: $green3;
+			}
+			ul{
+				li{
+					width: 310px;
+					margin-right: 30px;
+					display: inline-block;
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+			article{
+				figure{
+					width: 170px;
+					height: 170px;
+					border-radius: 50%;
+					position: relative;
+					background-color: $green2;
+					img{
+						width: 100%;
+						height: auto;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						margin-top: -85px;
+						margin-left: -85px;
+					}
+				}
+				.post-head{
+					margin-top: 20px;
+					h4, h4 a{
+						font-size: 24px;
+						line-height: 28px;
+						text-transform: uppercase;
+						color: $green3;
+						&:hover{
+							color: $white;
+						}
+					}
+					.date{
+						color: $green4;
+					}
+				}
+			}
+			.chapter-footer{
+				margin-top: 50px;
+			}
+		}
+	}
+}
+.fullscreen{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	position: fixed;
+	cursor: pointer;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	.img-block{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		left: 50%;
+		top: 50%;
+		padding: 8px;
+		img{
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+	}
+	.help{
+		width: 150px;
+		background-color: $orange;
+		text-align: center;
+		color: $white;
+		padding: 10px;
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+		top:45%;
+		font-size: 14px;
+		line-height: 16px;
+		border-radius: 10px;
+		box-shadow: 0 0 30px $white;
+	}
+	.info{
+		display: none;
+		width: 500px;
+		background-color: #eee;
+		height: auto;
+		text-align: center;
+		color: #444;
+		padding: 10px;
+		position: absolute;
+		left: 50%;
+		margin-left: -250px;
+		top:10%;
+		font-size: 14px;
+		line-height: 16px;
+		border-radius: 10px;
+	}
+	.border{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		border: 8px solid $black;
+	}
+	a.sitelink{
+		display: none;
+		width: 200px;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -100px;
+		background-color: $black;
+		color: $white;
+		text-align: center;
+		padding: 20px;
+		border-radius: 0 0 20px 20px;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

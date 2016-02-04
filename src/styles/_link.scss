@@ -1,0 +1,77 @@
+/**
+ * Links
+ * ----------------------------------------------------------------------------
+ */
+ 
+a{
+    text-decoration: none;
+    transition-property: color, background-color, opacity;
+    transition-duration: 0.3s;
+    color: $black;
+    &:link, &:visited, &:active, &.hover, &:focus{
+    	color: $black;
+    	outline: 0 none;
+    	border: 0 none;
+    }
+    &.more{
+    	display: inline-block;
+    	width: 156px;
+    	height: 40px;
+    	background: url("../images/more_arrow1.svg") right center no-repeat;
+    	font-size: 20px;
+    	line-height: 22px;
+    	font-family: 'rl';
+    	color: $white;
+    	text-transform: uppercase;
+    	text-align: left;
+    	opacity: .5;
+    	&:before{
+    		display: inline-block;
+    		content: '';
+    		width: 30px;
+    		height: 40px;
+    		background: url("../images/eye.svg") center no-repeat;
+    		vertical-align: -13px;
+    		margin: 0 13px;
+    	}
+    	&:hover{
+    		opacity: 1;
+    	}
+    }
+    &.more-2{
+        display: inline-block;
+        vertical-align: middle;
+        width: 11px;
+        height: 11px;
+        background: url("../images/more_arrow2.svg") no-repeat center;
+    }
+    &.close1{
+        background: url("../images/close1.svg") center no-repeat;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+    }
+    &.edit{
+        background: url("../images/edit.svg") center no-repeat;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+    }
+    &.back{
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        background: url("../images/back_arrow.svg") -8px center no-repeat;
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 10px;
+        font-family: 'rl';
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        opacity: .5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

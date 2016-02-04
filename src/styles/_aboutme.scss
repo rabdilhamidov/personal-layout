@@ -1,0 +1,56 @@
+/**
+ * Blog Content
+ * ----------------------------------------------------------------------------
+ */
+.resume{
+	padding-left: 20px;
+	h3{
+		font-size: 26px;
+		line-height: 29px;
+		margin-top: 30px;
+		margin-bottom: 10px !important;
+		color: $green1;
+		text-transform: uppercase;
+		span{
+			text-transform: none;
+			font-size: 22px;
+			vertical-align: top;
+		}
+	}
+	h4{
+		font-size: 20px;
+		line-height: 23px;
+		margin-top: 20px;
+		margin-bottom: 10px !important;
+	}
+	p, li, td{
+		font-size: 16px;
+		line-height: 22px;
+		color: $black;
+		margin-top: 5px;
+	}
+	a{
+		text-decoration: underline;
+	}
+	table{
+		border-spacing: 0px;
+		width: 100%;
+		thead td{
+			font-family: 'rb';
+			color: $grey;
+		}
+		td{
+			border-bottom: 1px dotted $grey;
+			vertical-align: top;
+			// padding-left: 30px;
+			padding: 10px 30px 12px;
+			&:first-child{
+				padding-left: 0;
+				width: 140px;
+			}
+			&:nth-child(2), &:nth-child(3){
+				width: 140px;
+			}
+		}
+	}
+}
