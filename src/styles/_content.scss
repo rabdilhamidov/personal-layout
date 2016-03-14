@@ -97,6 +97,19 @@ section{
 					text-decoration: underline;
 				}
 			}
+			.admin-edit-link{
+				display: block;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				background-color: rgba(140, 180, 75, 0.5);
+				color: white;
+				width: 50px;
+				text-decoration: underline;
+				text-align: center;
+				padding: 5px 0 5px;
+				font-style: italic;
+			}
 		}
 		.controls a{
 			opacity: 0.3;
