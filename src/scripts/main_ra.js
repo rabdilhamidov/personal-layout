@@ -108,16 +108,16 @@ $(function () {
 
 
   	// подпись картинки-анонса
-	.on('mouseenter', '.chapter figure', function (event) {
-		event.preventDefault();
-		if($(this).find('figcaption').length){
-			$(this).find('figcaption').slideDown(300);
-		}
-	})
-	.on('mouseleave', '.chapter figure', function (event) {
-		event.preventDefault();
-		$(this).find('figcaption').slideUp(300);
-	})
+	// .on('mouseenter', '.chapter figure', function (event) {
+	// 	event.preventDefault();
+	// 	if($(this).find('figcaption').length){
+	// 		$(this).find('figcaption').slideDown(300);
+	// 	}
+	// })
+	// .on('mouseleave', '.chapter figure', function (event) {
+	// 	event.preventDefault();
+	// 	$(this).find('figcaption').slideUp(300);
+	// })
   	
   	// Укрупнение-закрытие полноэкранного изображения
 	.on('click', '.chapter figure a.imglink', function (event) {
@@ -132,8 +132,7 @@ $(function () {
 				}else{
 					console.log("All fun!\r\n" + response);
 					fullscreenImg($('.fullscreen .img-block img'));
-					$('.fullscreen .help').show();
-					$('.fullscreen .help').fadeOut(2000);
+					$('.fullscreen .help').show(200).delay(500).fadeOut(2000);
 				}
 			}
 		); 
