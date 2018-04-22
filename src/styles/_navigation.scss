@@ -2,6 +2,22 @@
  * Navigation
  * ----------------------------------------------------------------------------
 */
+html{
+	&[lang='ru']{
+		.lang-menu a{
+			&.ru{
+				font-family: "rb";
+			}
+		}
+	}
+	&[lang='en']{
+		.lang-menu a{
+			&.en{
+				font-family: "rb";
+			}
+		}
+	}
+}
 header{
 	nav.main-navigation{
 		display: inline-block;
@@ -26,15 +42,22 @@ header{
 			ul{
 				li{
 					display: inline-block;
+					font-family: "rt";
 					a{
 						width: 50px;
 						height: 32px;
-						color: transparent;
-						&.ru{
-							background: url("../images/flag_russia.svg") center no-repeat;
-						}
-						&.en{
-							background: url("../images/flag_uk.svg") center no-repeat;
+						font-size: 14px;
+						line-height: 16px;
+						color: $black;
+						font-family: "rr";
+						// &.ru{
+						// 	background: url("../images/flag_russia.svg") center no-repeat;
+						// }
+						// &.en{
+						// 	background: url("../images/flag_uk.svg") center no-repeat;
+						// }
+						&:hover, &:active{
+							font-family: "rb";
 						}
 					}
 				}
